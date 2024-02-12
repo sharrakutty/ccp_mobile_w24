@@ -55,28 +55,37 @@ body {
     line-height: 1.6;
     color: #333;
     margin: 50px;
-    background-color: #f5f5f5;
+    background-color: #c4d8c2;
 }
 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    line-height: 1.2;
+    font-weight: bold;   
 }
 
 h1 {
-    font-size: 2.5rem;
-    text-align: left;
+    font-size: 3rem;
+    color: #233C21;
+    margin: 10px;
+    padding: 10px;
+    line-height: 1.2;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 0.2rem;
     margin-top: 2rem;
+
 }
 
 h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+    margin: 0 0 0.1rem;
+    color: #385335
 }
 
 p {
@@ -90,7 +99,7 @@ a {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     align-items: center;
   }
@@ -147,24 +156,28 @@ a {
     }
 }
 
-.photo-gallery {
+main{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px; 
 }
 
-.photo-pair {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
-    align-items: start;
-}
-
-.photo-pair img {
-    width: 100%;
+main > div {
+    background-color: #f9f9f9; 
+    padding: 20px;
     border-radius: 10px;
+
 }
 
-.photo-pair p {
-    margin: 10px 0;
+main > div > h2 {
+    font-family: Arial;
+    color:#2E472B;
+    margin-top: 0;
+    font-size: 30px;
+    text-align: center;
 }
+
+img {
+    width: 100%;
+}
+
