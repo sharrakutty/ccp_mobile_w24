@@ -58,7 +58,7 @@ body {
     background-color: #c4d8c2;
 }
 
-h1, h2, h3 {
+h1, h2, h4 {
     font-family: 'Playfair Display', serif;
     font-weight: bold;   
 }
@@ -77,12 +77,11 @@ h2 {
 
 }
 
-h3 {
+h4 {
     font-size: 1.5rem;
-    margin-top: 1.5rem;
 }
 
-h4 {
+h3 {
     font-size: 1rem;
     margin: 0 0 0.1rem;
     color: #385335
@@ -93,8 +92,9 @@ p {
 }
 
 a {
-    color: #5E5CE6;
+    color: #54195d;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .container {
